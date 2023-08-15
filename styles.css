@@ -1,0 +1,766 @@
+.resto{
+    display: none;
+}
+:root{
+    --color-Primary:  hsl(180, 29%, 50%);
+    /* Neutral */
+    --background:  hsl(180, 52%, 96%);
+    --Filter-Tablets:hsl(180, 31%, 95%);
+    --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+    --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    background-color: var(--background);
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "logo ";
+    font-family: 'League Spartan', sans-serif;
+    padding-bottom: 5vw;
+}
+@media(min-width: 1024px){
+    
+.log{
+    grid-area: logo;
+    max-width: 100vw;
+    height: 10vw;
+   background-image: url(images/bg-header-desktop.png);
+   background-size: cover;
+   background-color: var(--color-Primary);
+    
+}
+#filtro{
+    max-width: 100vw;
+    height: 3vw;
+    margin: 0  auto 0 auto  ;
+}
+
+.Item-start1{
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    /* border: 10px solid black; */
+    grid-template-areas: 
+    "foto principal role";
+    width: 75vw;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white; 
+    box-shadow: 0px 10px 30px rgba(157, 157, 157, 0.723);
+    padding: 2vw;
+    margin-top: 3vw;
+    border-radius: 1vw;
+}
+.quali{
+    display: flex;
+    font-size: 1vw;
+    grid-area: quali;
+    text-align: left;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+
+}
+#Photosnap{
+    color: var(--color-Primary);
+    font: bold;
+    font-size: 1.5vw;
+    text-align: left;
+}
+#new{
+    background-color: var(--color-Primary);
+    color: white;
+    padding: 1%;
+    border-radius: 20vw;
+    text-transform: uppercase;
+}
+#featured{
+    background-color: var(--Very-Dark-Grayish-Cyan);
+    color: white;
+    padding: 1%;
+    border-radius: 20vw;
+    text-transform: uppercase;
+
+}
+#new, #featured{
+    margin-left: 1vw;
+}
+
+.foto{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/photosnap.svg);
+    background-size: cover;
+  
+}
+.foto2{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    
+    background-image: url(images/manage.svg);
+    background-size: cover;
+    
+}
+.foto3{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+
+    background-image: url(images/account.svg);
+    background-size: cover;
+    
+}
+.foto4{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+
+    background-image: url(images/myhome.svg);
+    background-size: cover;
+    
+}
+.foto5{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/loop-studios.svg);
+    background-size: cover;
+    
+}
+
+.foto6{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/faceit.svg);
+    background-size: cover;
+    
+}
+.foto7{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/shortly.svg);
+    background-size: cover;
+    
+}
+
+.foto8{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/insure.svg);
+    background-size: cover;
+    
+}
+
+.foto9{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/eyecam-co.svg);
+    background-size: cover;
+    
+}
+
+
+.foto10{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/the-air-filter-company.svg);
+    background-size: cover;
+    
+}
+
+.dev, .quali{
+    margin-left: 2vw;
+}
+.dev{
+    grid-area: dev;
+    justify-content: space-around;
+    
+}
+.dev h3{
+    text-align: left;
+    font-size: 1.6vw;
+    align-items: center;
+}
+.dev ul{
+    margin-top: 1vw;
+    text-align: left;
+    align-items:start;
+    color: gray ;
+}
+
+#um{
+    list-style: none;
+    
+}
+#B{
+    border-left: 1vw solid var(--color-Primary);
+}
+.role {
+    justify-content:right;
+    align-items: center;
+   
+}
+ .role li{
+    background-color:var(--background) ;
+    color: var(--color-Primary);
+    height: 1vw;
+    padding: 1% 1vw 1% 1vw ;
+    border-radius: 0.5vw;
+    margin-left: 6vw;
+    list-style: none;
+    grid-area: role;
+    margin-left: 0.5vw;
+    font-size: 1.2vw;
+    /* border: 2px solid black; */
+}
+.role{
+    display: flex;
+    margin-left: 5vw;  
+}
+.role li:hover{
+    background-color: var(--color-Primary);
+    color: white;
+    cursor: pointer;
+}
+.principal{
+    grid-area: principal;
+    align-items: start;
+}
+.principal ul{
+    display: flex;
+
+}
+.principal ul li {
+    margin-left: 2vw;
+}
+.principal ul li a{
+    text-decoration: none;
+}
+}
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1023px){
+    
+.log{
+    grid-area: logo;
+    max-width: 100vw;
+    height: 10vw;
+   background-image: url(images/bg-header-desktop.png);
+   background-size: cover;
+   background-color: var(--color-Primary);
+    
+}
+#filtro{
+    max-width: 100vw;
+    height: 3vw;
+    margin: 0  auto 0 auto  ;
+}
+
+.Item-start1{
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    /* border: 10px solid black; */
+    grid-template-areas: 
+    "foto principal role";
+    width: 75vw;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white; 
+    box-shadow: 0px 10px 30px rgba(157, 157, 157, 0.723);
+    padding: 2vw;
+    margin-top: 3vw;
+    border-radius: 1vw;
+}
+.quali{
+    display: flex;
+    font-size: 1vw;
+    grid-area: quali;
+    text-align: left;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+
+}
+#Photosnap{
+    color: var(--color-Primary);
+    font: bold;
+    font-size: 1.5vw;
+    text-align: left;
+}
+#new{
+    background-color: var(--color-Primary);
+    color: white;
+    padding: 1%;
+    border-radius: 20vw;
+    text-transform: uppercase;
+}
+#featured{
+    background-color: var(--Very-Dark-Grayish-Cyan);
+    color: white;
+    padding: 1%;
+    border-radius: 20vw;
+    text-transform: uppercase;
+
+}
+#new, #featured{
+    margin-left: 1vw;
+}
+
+.foto{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/photosnap.svg);
+    background-size: cover;
+  
+}
+.foto2{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    
+    background-image: url(images/manage.svg);
+    background-size: cover;
+    
+}
+.foto3{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+
+    background-image: url(images/account.svg);
+    background-size: cover;
+    
+}
+.foto4{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+
+    background-image: url(images/myhome.svg);
+    background-size: cover;
+    
+}
+.foto5{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/loop-studios.svg);
+    background-size: cover;
+    
+}
+
+.foto6{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/faceit.svg);
+    background-size: cover;
+    
+}
+.foto7{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/shortly.svg);
+    background-size: cover;
+    
+}
+
+.foto8{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/insure.svg);
+    background-size: cover;
+    
+}
+
+.foto9{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/eyecam-co.svg);
+    background-size: cover;
+    
+}
+
+
+.foto10{
+    align-items: start;
+    grid-area: foto;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(images/the-air-filter-company.svg);
+    background-size: cover;
+    
+}
+
+.dev, .quali{
+    margin-left: 2vw;
+}
+.dev{
+    grid-area: dev;
+    justify-content: space-around;
+    
+}
+.dev h3{
+    text-align: left;
+    font-size: 2vw;
+    align-items: center;
+}
+.dev ul{
+    margin-top: 1vw;
+    text-align: left;
+    align-items:start;
+    color: gray ;
+}
+.dev ul li{
+    font-size:1.6vw
+}
+#um{
+    list-style: none;
+    
+}
+#B{
+    border-left: 1vw solid var(--color-Primary);
+}
+.role {
+    justify-content:right;
+    align-items: center;
+   
+}
+ .role li{
+    background-color:var(--background) ;
+    color: var(--color-Primary);
+    height: 1vw;
+    padding: 1% 1vw 1% 1vw ;
+    border-radius: 0.5vw;
+    margin-left: 6vw;
+    list-style: none;
+    grid-area: role;
+    margin-left: 0.5vw;
+    font-size: 1.2vw;
+    /* border: 2px solid black; */
+}
+.role{
+    display: flex;
+    margin-left: 5vw;  
+}
+.role li:hover{
+    background-color: var(--color-Primary);
+    color: white;
+    cursor: pointer;
+}
+.principal{
+    grid-area: principal;
+    align-items: start;
+}
+.principal ul{
+    display: flex;
+
+}
+.principal ul li {
+    margin-left: 2vw;
+}
+.principal ul li a{
+    text-decoration: none;
+}
+}
+
+/* RESPONSIVOOO */
+@media (max-width: 767px) {
+    
+.log{
+    grid-area: logo;
+    max-width: 100vw;
+    height: 30vw;
+   background-image: url(images/bg-header-mobile.png);
+   background-size: cover;
+   background-color: var(--color-Primary);
+    
+}
+#filtro{
+    max-width: 50vw;
+    height: 5vw;
+    margin: 0  auto 0 auto  ;
+    font-size: 2vw;
+}
+
+.Item-start1{
+    display: block;
+    width: 75vw;
+    height: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white; 
+    padding: 2vw;
+    margin-top: 3vw;
+    margin-bottom: 10vw;
+    border-radius: 1vw;
+    box-shadow: 0px 10px 30px rgb(157, 157, 157);
+    align-items: center;
+}
+#B{
+    border-left: 1vw solid var(--color-Primary);
+}
+.quali{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: quali;
+    text-align: left;
+    margin: 1vw 1vw 2vw 0vw;
+    font-size: 2vw;
+    width: 60vw;
+    align-items: center;
+    padding-left: 3vw;
+    justify-content: left;
+
+}
+#Photosnap{
+    color: var(--color-Primary);
+    font: bold;
+    font-size: 4vw;
+}
+#new{
+    background-color: var(--color-Primary);
+    color: white;
+    padding: 1% 1% 1%;
+    border-radius: 20vw;
+    text-transform: uppercase;
+    font-size: 3vw;
+    text-align: center;
+    align-items: center;
+    margin-left: 2vw;
+}
+#featured{
+    background-color: var(--Very-Dark-Grayish-Cyan);
+    color: white;
+    padding: 1%;
+    border-radius: 20vw;
+    text-transform: uppercase;
+    font-size: 3vw;
+    text-align: center;
+    align-items: center;
+    margin-left: 2vw;
+
+}
+
+.foto{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/photosnap.svg);
+    background-size: cover;
+    
+
+}
+.foto2{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/manage.svg);
+    background-size: cover;
+    
+}
+.foto3{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/account.svg);
+    background-size: cover;
+    
+}
+.foto4{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/myhome.svg);
+    background-size: cover;
+    
+}
+.foto5{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/loop-studios.svg);
+    background-size: cover;
+    
+}
+
+.foto6{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/faceit.svg);
+    background-size: cover;
+    
+}
+.foto7{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/shortly.svg);
+    background-size: cover;
+    
+}
+
+.foto8{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/insure.svg);
+    background-size: cover;
+    
+}
+
+.foto9{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/eyecam-co.svg);
+    background-size: cover;
+    
+}
+
+
+.foto10{
+    align-items: start;
+    grid-area: foto;
+    width: 10vw;
+    height: 10vw;
+    margin: -7vw 0 0 0;
+    background-image: url(images/the-air-filter-company.svg);
+    background-size: cover;
+    
+}
+
+.dev{
+    justify-content: space-around;
+    margin-left: 3vw;
+    
+}
+.dev h3{
+    text-align: left;
+    font-size: 5vw;
+}
+.dev ul{
+    margin-top: 2vw;
+    text-align: left;
+    align-items:start;
+    color: gray ;
+    
+}
+.dev ul li{
+    font-size: 6vw;
+    width: 10vw;
+    height: 2vw;
+}
+#um{
+    list-style: none;
+    margin-left: -0vw;
+    
+}
+.role {
+    justify-content:s;
+    grid-area: role;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    height: 15vw;
+    margin-left: 5vw; 
+    border-top: 1px solid gray;
+    padding: 2vw;
+
+   
+}
+ .role li{
+    background-color:var(--background) ;
+    color: var(--color-Primary);
+    padding: 2% 2vw 2% 2vw ;
+    border-radius: 0.5vw;
+    margin-left: 6vw;
+    list-style: none;
+    text-align: center;
+    margin: 1vw;
+    font-size: 3vw;
+    width: 12vw;
+    height: 2vw;
+    /* border: 2px solid black; */
+}
+
+.role li:hover{
+    background-color: var(--color-Primary);
+    color: white;
+    cursor: pointer;
+}
+.principal{
+    grid-area: principal;
+    align-items: start;
+    padding: 3vw;
+}
+.principal ul{
+    display: flex;
+
+}
+.principal ul li {
+    margin-left: 10vw;
+    padding: 1vw;
+    font-size: 2vw;
+    
+}
+.principal ul li a{
+    text-decoration: none;
+
+}
+
+}
